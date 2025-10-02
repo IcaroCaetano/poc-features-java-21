@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class SequencedCollections {
-    public static void runExample() {
+    public static void run() {
         List<String> list = new ArrayList<>(List.of("A", "B", "C"));
 
         System.out.println("First: " + list.getFirst());
