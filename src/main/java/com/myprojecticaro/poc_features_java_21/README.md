@@ -78,3 +78,13 @@ or with Gradle:
 - Maven or Gradle
 
 - (Optional) IDE such as IntelliJ IDEA or Eclipse
+
+- ## 📖 References
+
+- [JEP 441: Pattern Matching for switch](https://openjdk.org/jeps/441)  
+- [JEP 440: Record Patterns](https://openjdk.org/jeps/440)  
+- [JEP 444: Virtual Threads](https://openjdk.org/jeps/444)  
+- [JEP 431: Sequenced Collections](https://openjdk.org/jeps/431)  
+- [JEP 446: Scoped Values](https://openjdk.org/jeps/446)  
+- [JEP 430: String Templates (Preview)](https://openjdk.org/jeps/430)  
+
