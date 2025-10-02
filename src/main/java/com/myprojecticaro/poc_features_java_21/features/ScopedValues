@@ -1,0 +1,17 @@
+import java.util.concurrent.*;
+
+public class ScopedValues {
+    private static final ScopedValue<String> USER = ScopedValue.newInstance();
+
+    public static void runExample() {
+        ScopedValue.where(USER, "user-21").run(() -> {
+            try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
+                executor.submit(() -> {
+                    System.out.println("Scoped value: " + USER.get());
+                }).get();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+    }
+}
