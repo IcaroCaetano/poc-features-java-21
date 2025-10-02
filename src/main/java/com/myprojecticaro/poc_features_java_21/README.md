@@ -5,6 +5,7 @@ This project demonstrates some of the most relevant and exciting features introd
 Each feature is showcased in a simple and runnable example under the features package.
 
 ## 📌 Features Covered
+
 ###🔹 Pattern Matching for Switch (JEP 441)
 
 Enhances switch statements and expressions with pattern matching, making the code more concise and expressive.
