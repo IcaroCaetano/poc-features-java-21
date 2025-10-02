@@ -29,3 +29,52 @@ A safer and faster alternative to ThreadLocal, useful for sharing immutable data
 ### 🔹 String Templates (Preview, JEP 430)
 
 Introduces string interpolation for more readable and concise string formatting.
+
+## 📂 Project Structure
+
+´´´´
+
+poc-features-java-21/
+ ├─ src/main/java/com/myprojecticaro/poc_features_java_21/
+ │   ├─ PocFeaturesJava21Application.java   # Spring Boot entry point
+ │   └─ features/
+ │       ├─ PatternMatchingSwitch.java
+ │       ├─ RecordPatterns.java
+ │       ├─ VirtualThreadsExample.java
+ │       ├─ SequencedCollectionsExample.java
+ │       ├─ ScopedValuesExample.java
+ │       └─ StringTemplatesExample.java
+´´´´
+
+## ▶️ Running the Project
+
+### 1. Clone the repository:
+
+´´´´
+
+git clone https://github.com/your-username/poc-features-java-21.git
+cd poc-features-java-21
+´´´´
+
+### 2. Build and run with Java 21:
+
+´´´´
+
+./mvnw spring-boot:run
+´´´´
+or with Gradle:
+
+´´´´
+
+./gradlew bootRun
+´´´´
+
+### 3. Check the console output to see the examples running.
+
+## ⚙️ Requirements
+
+- Java 21 (LTS)
+
+- Maven or Gradle
+
+- (Optional) IDE such as IntelliJ IDEA or Eclipse
