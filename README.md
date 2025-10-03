@@ -73,3 +73,25 @@ Using Gradle:
 ````
 
 3. Check the console output to see the examples in action.
+
+## ⚙️ Requirements
+
+- Java 21 (LTS) installed and configured
+
+- Maven or Gradle for build and run
+
+- (Optional) IDE such as IntelliJ IDEA or Eclipse
+
+## 📖 References
+
+- JEP 441: Pattern Matching for switch
+
+- JEP 440: Record Patterns
+
+- JEP 444: Virtual Threads
+
+- JEP 431: Sequenced Collections
+
+- JEP 446: Scoped Values
+
+- JEP 430: String Templates (Preview)
