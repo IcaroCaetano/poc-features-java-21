@@ -5,26 +5,44 @@ Each feature is implemented as a simple, runnable example under the features pac
 
 ## 📌 Features Covered
 
-###🔹 Pattern Matching for Switch (JEP 441)
+### 🔹 Pattern Matching for Switch (JEP 441)
 
 Enhances switch statements and expressions with pattern matching, allowing more concise and readable code.
 
-####🔹 Record Patterns (JEP 440)
+#### 🔹 Record Patterns (JEP 440)
 
 Introduces record deconstruction directly in instanceof checks and switch expressions.
 
-####🔹 Virtual Threads (Project Loom, JEP 444)
+#### 🔹 Virtual Threads (Project Loom, JEP 444)
 
 Provides lightweight threads that enable massive concurrency with minimal resource consumption.
 
-####🔹 Sequenced Collections (JEP 431)
+#### 🔹 Sequenced Collections (JEP 431)
 
 Adds new methods like getFirst(), getLast(), and reversed() for List, Set, and Map.
 
-####🔹 Scoped Values (JEP 446)
+#### 🔹 Scoped Values (JEP 446)
 
 A more efficient and safer alternative to ThreadLocal for sharing immutable data within and across threads.
 
-####🔹 String Templates (Preview, JEP 430)
+#### 🔹 String Templates (Preview, JEP 430)
 
 Introduces string interpolation for easier and more expressive string formatting.
+
+
+## 📂 Project Structure
+
+´´´´
+
+poc-features-java-21/
+ ├─ src/main/java/com/myprojecticaro/poc_features_java_21/
+ │   ├─ PocFeaturesJava21Application.java   # Spring Boot entry point
+ │   └─ features/
+ │       ├─ PatternMatchingSwitch.java
+ │       ├─ RecordPatterns.java
+ │       ├─ VirtualThreadsExample.java
+ │       ├─ SequencedCollectionsExample.java
+ │       ├─ ScopedValuesExample.java
+ │       └─ StringTemplatesExample.java
+
+´´´´
