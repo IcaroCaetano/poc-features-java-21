@@ -33,7 +33,7 @@ Introduces string interpolation for easier and more expressive string formatting
 ## 📂 Project Structure
 
 
-´´´´
+````
 poc-features-java-21/
  ├─ src/main/java/com/myprojecticaro/poc_features_java_21/
  │   ├─ PocFeaturesJava21Application.java   # Spring Boot entry point
@@ -45,4 +45,15 @@ poc-features-java-21/
  │       ├─ ScopedValuesExample.java
  │       └─ StringTemplatesExample.java
 
-´´´´
+````
+
+
+## ▶️ Running the Project
+
+1. Clone the repository:
+
+````
+
+git clone https://github.com/your-username/poc-features-java-21.git
+cd poc-features-java-21
+````
