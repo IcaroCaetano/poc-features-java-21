@@ -57,3 +57,19 @@ poc-features-java-21/
 git clone https://github.com/your-username/poc-features-java-21.git
 cd poc-features-java-21
 ````
+
+2. Build and run with Java 21:
+
+Using Maven:
+
+````
+./mvnw spring-boot:run
+````
+
+Using Gradle:
+
+````
+./gradlew bootRun
+````
+
+3. Check the console output to see the examples in action.
