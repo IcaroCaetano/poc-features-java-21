@@ -38,7 +38,7 @@ public class RecordPatterns {
      *
      * @param obj the object to test for record pattern matching
      */
-    public static void runExample(Object obj) {
+    public static void run(Object obj) {
         if (obj instanceof Point(int x, int y)) {
             System.out.println("Point with x=" + x + ", y=" + y);
         }
