@@ -48,7 +48,16 @@ import java.util.concurrent.*;
  * @see <a href="https://openjdk.org/jeps/444">JEP 444: Virtual Threads</a>
  */
 public class VirtualThreads {
-    public static void runExample() {
+
+      /**
+     * Runs an example demonstrating the creation and execution of multiple tasks using
+     * virtual threads.
+     * <p>
+     * Each task runs concurrently in its own virtual thread, sleeps for one second,
+     * and prints its task number along with the executing thread information.
+     * </p>
+     */
+    public static void run() {
         try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
             for (int i = 0; i < 5; i++) {
                 int task = i;
