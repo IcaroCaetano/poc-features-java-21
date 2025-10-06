@@ -1,4 +1,4 @@
-
+package com.myprojecticaro.poc_features_java_21.features;
 
 /**
  * Demonstrates the use of <b>String Templates</b>, a preview feature introduced in Java 21 (JEP 430).
