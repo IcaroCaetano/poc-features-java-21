@@ -34,8 +34,24 @@ import java.util.concurrent.*;
  * @see java.util.concurrent.Executors#newVirtualThreadPerTaskExecutor()
  */
 public class ScopedValues {
+
+    /**
+     * Defines a scoped value that holds user-related data for the current scope.
+     */
     private static final ScopedValue<String> USER = ScopedValue.newInstance();
 
+    
+    /**
+     * Runs an example demonstrating how to use scoped values with virtual threads.
+     * <p>
+     * A scoped value {@code USER} is bound to the value {@code "user-21"} and is made accessible
+     * inside the provided runnable block. Within that block, a virtual thread is created and retrieves
+     * the scoped value using {@link ScopedValue#get()}.
+     * </p>
+     * <p>
+     * The example uses a try-with-resources block to ensure the {@link ExecutorService} is properly closed.
+     * </p>
+     */
     public static void run() {
         ScopedValue.where(USER, "user-21").run(() -> {
             try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
