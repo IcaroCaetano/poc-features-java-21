@@ -22,7 +22,24 @@ package com.myprojecticaro.poc_features_java_21.features;
 * JEP 441: Pattern Matching for switch</a></p>
 */
 public class PatternMatchingSwitch {
-    public static void runExample(Object obj) {
+
+      /**
+     * Demonstrates how pattern matching works with {@code switch} expressions.
+     * <p>
+     * Depending on the runtime type and characteristics of the provided {@code obj},
+     * the method matches the value against several cases:
+     * </p>
+     * <ul>
+     *   <li>{@code Integer i} → prints "Integer: {i}"</li>
+     *   <li>{@code String s when s.length() > 5} → prints "Long string: {s}"</li>
+     *   <li>{@code String s} → prints "Short string: {s}"</li>
+     *   <li>{@code null} → prints "Null value"</li>
+     *   <li>{@code default} → prints "Unknown type"</li>
+     * </ul>
+     *
+     * @param obj the object to be matched in the switch expression
+     */
+    public static void run(Object obj) {
         String result = switch (obj) {
             case Integer i -> "Integer: " + i;
             case String s when s.length() > 5 -> "Long string: " + s;
